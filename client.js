@@ -13,7 +13,7 @@ function onReady() {
     $newDiv.append("<button class='swap'>Swap</button><button class='delete'>Delete</button>");
   });
   $(".container").on("click", ".swap", function() {
-    $(this).parent().removeClass("red").addClass("yellow");
+    $(this).parent().toggleClass("red").toggleClass("yellow");
   });
   $(".container").on("click", ".delete", function() {
     $(this).parent().remove();
